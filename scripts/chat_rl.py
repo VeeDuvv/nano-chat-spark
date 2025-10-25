@@ -12,8 +12,8 @@ simpler and more similar to just REINFORCE:
 1 GPU:
 python -m scripts.chat_rl
 
-8 GPUs:
-torchrun --standalone --nproc_per_node=8 -m scripts.chat_rl -- --run=default
+Multiple GPUs:
+torchrun --standalone --nproc_per_node=gpu -m scripts.chat_rl -- --run=default
 """
 
 import os

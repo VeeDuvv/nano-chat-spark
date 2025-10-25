@@ -4,8 +4,8 @@ Evlauate the CORE metric for a given model.
 Run on a single GPU:
 python base_eval.py
 
-Run with torchrun on e.g. 8 GPUs:
-torchrun --nproc_per_node=8 base_eval.py
+Run with torchrun:
+torchrun --nproc_per_node=gpu base_eval.py
 
 The script will print the CORE metric to the console.
 """
